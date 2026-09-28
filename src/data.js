@@ -20,9 +20,9 @@ import b4 from './assets/images/brand-4.png'
 import b5 from './assets/images/brand-5.png'
 
 export const navLinks = [
-  { label: 'Home', href: '#top' },
-  { label: 'Courses', href: '#courses' },
-  { label: 'Creators', href: '#creators' },
+  { label: 'Home', to: '/' },
+  { label: 'Courses', to: '/courses' },
+  { label: 'Creators', to: '/#creators' },
 ]
 
 export const brands = [b1, b2, b3, b4, b5]
@@ -58,3 +58,7 @@ export const footerColumns = [
   ['Development', 'Marketing', 'Photography', 'Finance', 'Sport'],
   ['Become a Creator', 'Affiliate Program', 'Contact', 'Help', 'About'],
 ]
+
+// Courses page (design shows 18 cards – the 6 sample courses repeated)
+export const allCourses = [...courses, ...courses, ...courses]
+export const searchFilters = ['Featured', 'Music', 'Drawing & Painting', 'Marketing', 'Animation', 'Social Media', 'UI/UX Design', 'Creative Marketing', 'Cooking']

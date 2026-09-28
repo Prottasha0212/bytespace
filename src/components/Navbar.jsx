@@ -5,9 +5,9 @@ import { navLinks } from '../data.js'
 export default function Navbar() {
   return (
     <header className="navbar">
-      <a href="#top"><img src={logo} alt="ByteSpace" className="navbar__logo" /></a>
+      <Link to="/"><img src={logo} alt="ByteSpace" className="navbar__logo" /></Link>
       <nav className="navbar__links" aria-label="Main">
-        {navLinks.map((l) => <a key={l.label} href={l.href}>{l.label}</a>)}
+        {navLinks.map((l) => <Link key={l.label} to={l.to}>{l.label}</Link>)}
       </nav>
       <div className="navbar__actions">
         <Link to="/login">Sign In</Link>
