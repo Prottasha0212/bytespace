@@ -1,0 +1,8 @@
+export default function FormField({ label, id, ...inputProps }) {
+  return (
+    <div className="field">
+      <label htmlFor={id}>{label}</label>
+      <input id={id} name={id} {...inputProps} />
+    </div>
+  )
+}
