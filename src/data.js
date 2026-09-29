@@ -98,3 +98,23 @@ export const lessonModules = [
   { title: 'Module 6: Project Showcase and Critique', text: "Perfect your presentation skills with 'Effective Presentation Techniques' and embrace collaboration with 'Peer Critique and Collaboration.' Showcase your work with confidence." },
   { title: 'Module 7: Optimizing Digital Assets for Various Platforms', text: "Adapt your digital creations for 'Mobile Platforms' and optimize for 'Social Media.' Ensure widespread accessibility and engagement across diverse digital landscapes." },
 ]
+
+// Reviews tab
+export const ratingSummary = { average: 4.7, breakdown: [
+  { stars: 5, count: 720, pct: 92 },
+  { stars: 4, count: 120, pct: 46 },
+  { stars: 3, count: 21, pct: 12 },
+  { stars: 2, count: 12, pct: 6 },
+  { stars: 1, count: 16, pct: 6 },
+] }
+
+import review1 from './assets/images/review-1.png'
+import review2 from './assets/images/review-2.png'
+import review3 from './assets/images/review-3.png'
+import review4 from './assets/images/review-4.png'
+export const reviews = [
+  { name: 'PurePearl Studio', role: 'UI/UX Designer', time: 'a year ago', rating: 5, avatar: review1, text: 'The course provided me with a comprehensive understanding of digital asset creation. The lessons were in-depth, practical, and immediately applicable to my work. Highly recommended!' },
+  { name: 'Albert Flores', role: 'UI/UX Designer', time: 'a year ago', rating: 5, avatar: review2, text: "This course transformed my approach to digital design. The combination of theory, hands-on exercises, and real-world applications made it a truly enriching experience. Excited to implement what I've learned!" },
+  { name: 'Cody Fisher', role: 'UI/UX Designer', time: 'a year ago', rating: 5, avatar: review3, text: 'The project showcase and critique module created a collaborative environment where I could showcase my work, receive valuable feedback, and refine my skills. It added a unique and valuable dimension to the learning process.' },
+  { name: 'Brooklyn Simmons', role: 'UI/UX Designer', time: 'a year ago', rating: 5, avatar: review4, text: 'The lessons on optimizing digital assets for various platforms were particularly insightful. The course adapts to the evolving digital landscape, and the engaging content kept me motivated throughout.' },
+]

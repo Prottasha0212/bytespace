@@ -3,9 +3,12 @@ import Navbar from '../components/Navbar.jsx'
 import Footer from '../components/Footer.jsx'
 import CourseTabs from '../components/course/CourseTabs.jsx'
 import CourseSidebar from '../components/course/CourseSidebar.jsx'
-import { courseDetail as c, lessonModules } from '../data.js'
+import { courseDetail as c, lessonModules, reviews } from '../data.js'
 import LessonModule from '../components/course/LessonModule.jsx'
 import ProgressCard from '../components/ProgressCard.jsx'
+import RatingSummary from '../components/course/RatingSummary.jsx'
+import ReviewCard from '../components/course/ReviewCard.jsx'
+import FilterChips from '../components/FilterChips.jsx'
 import video from '../assets/images/course-video.png'
 import sneak1 from '../assets/images/sneak-1.png'
 import sneak2 from '../assets/images/sneak-2.png'
@@ -15,6 +18,8 @@ import '../styles/course-detail.css'
 
 export default function CourseDetail() {
   const [tab, setTab] = useState('About')
+  const [ratingFilter, setRatingFilter] = useState('All rating')
+  const ratingOptions = ['All rating', '★ 5', '★ 4', '★ 3', '★ 2', '★ 1']
   return (
     <>
       <section className="course-hero">
@@ -76,7 +81,20 @@ export default function CourseDetail() {
           </>
         )}
 
-        {tab === 'Reviews' && <p className="course-body__p">Reviews are coming soon.</p>}
+        {tab === 'Reviews' && (
+          <>
+            <h2>What Learners Are Saying</h2>
+            <p className="course-body__p">Discover what our learners have to say about their experience with 'Build Digital Assets: A Comprehensive Guide.' Read reviews and ratings from individuals who have embarked on the transformative journey of mastering digital asset creation.</p>
+
+            <RatingSummary />
+
+            <h2>Individual Reviews:</h2>
+            <FilterChips items={ratingOptions} active={ratingFilter} onChange={setRatingFilter} className="filters--left" />
+            <div className="review-list">
+              {reviews.map((r) => <ReviewCard key={r.name} {...r} />)}
+            </div>
+          </>
+        )}
       </main>
       <Footer />
     </>
