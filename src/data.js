@@ -22,7 +22,7 @@ import b5 from './assets/images/brand-5.png'
 export const navLinks = [
   { label: 'Home', to: '/' },
   { label: 'Courses', to: '/courses' },
-  { label: 'Creators', to: '/creators/purepearl-studio' },
+  { label: 'Creators', to: '/#creators' },
 ]
 
 export const brands = [b1, b2, b3, b4, b5]
@@ -119,16 +119,16 @@ export const reviews = [
   { name: 'Brooklyn Simmons', role: 'UI/UX Designer', time: 'a year ago', rating: 5, avatar: review4, text: 'The lessons on optimizing digital assets for various platforms were particularly insightful. The course adapts to the evolving digital landscape, and the engaging content kept me motivated throughout.' },
 ]
 
+// Creator profile page
+import creatorHeroAvatar from './assets/images/creator-hero-avatar.png'
 export const creatorProfile = {
   name: 'PurePearl Studio',
-  role: 'Passionate UI/UX, Web designer',
-  avatar: review1,
-  products: 3,
-  followers: 12,
+  tagline: 'Passionate UI/UX, Web designer',
   bio: [
     "Welcome to the creative world of [Creator's Name]. Here, you'll discover the passion, expertise, and inspiration that drive my creative journey. Let's explore and learn together!",
-    'Dive into my creative portfolio, showcasing a glimpse of my artistic endeavors. From digital designs to multimedia projects, each piece tells a unique story.',
-    'Explore the world of creativity with me.',
+    'Dive into my creative portfolio, showcasing a glimpse of my artistic endeavors. From digital designs to multimedia projects, each piece tells a unique story. Explore the world of creativity with me.',
   ],
-  courses,
+  products: 3,
+  followers: 12,
+  avatar: creatorHeroAvatar,
 }

@@ -10,7 +10,7 @@ export default function CourseCard({ course }) {
         <h3>{course.title}</h3>
         <span className="course__rating">{course.rating} <i>★</i></span>
       </div>
-      <p className="course__author">by <a href="#creators">{course.author}</a></p>
+      <p className="course__author">by <Link to="/creators/purepearl-studio" className="course__author-link">{course.author}</Link></p>
       <div className="course__meta">
         <span className="pill">{course.level}</span>
         <img src={avatars} alt="Enrolled students" />
