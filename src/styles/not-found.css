@@ -1,0 +1,11 @@
+.not-found { color: #fff; text-align: center; padding-bottom: 96px; background-color: var(--blue);
+  background-image: linear-gradient(var(--blue-line) 1px, transparent 1px), linear-gradient(90deg, var(--blue-line) 1px, transparent 1px);
+  background-size: 120px 120px; }
+.not-found__body { max-width: 900px; margin: 0 auto; padding: 56px 24px 0; }
+.not-found__code { font: 700 clamp(120px, 18vw, 220px) var(--font-head); line-height: 1;
+  background: linear-gradient(180deg, var(--lime) 45%, #4a90a4 100%);
+  -webkit-background-clip: text; background-clip: text; color: transparent; }
+.not-found__body h2 { margin-top: 8px; font-size: clamp(28px, 3.6vw, 44px); line-height: 1.25; }
+.not-found__body p { margin: 32px 0 40px; font-size: 16px; opacity: .9; }
+
+@media (max-width: 600px) { .not-found__body { padding-top: 32px; } }

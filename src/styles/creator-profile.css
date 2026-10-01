@@ -1,0 +1,23 @@
+.creator-hero { color: #fff; padding-bottom: 72px; background-color: var(--blue);
+  background-image: linear-gradient(var(--blue-line) 1px, transparent 1px), linear-gradient(90deg, var(--blue-line) 1px, transparent 1px);
+  background-size: 120px 120px; }
+.creator-hero__body { max-width: 1200px; margin: 48px auto 0; padding: 0 24px; display: flex; align-items: center; gap: 24px; }
+.creator-hero__avatar { width: 96px; height: 96px; border-radius: 20px; object-fit: cover; flex-shrink: 0; }
+.creator-hero__info h1 { display: flex; align-items: center; gap: 16px; font-size: clamp(26px, 3vw, 34px); }
+.pill--lime { background: var(--lime); color: var(--ink); border-radius: 999px; padding: 8px 20px; font: 500 15px var(--font-body); }
+.creator-hero__tagline { margin-top: 10px; font-size: 15px; opacity: .9; }
+.creator-hero__bio { max-width: 1200px; margin: 28px auto 0; padding: 0 24px; line-height: 1.8; font-size: 15px; opacity: .9; }
+.creator-hero__bio + .creator-hero__bio { margin-top: 12px; }
+.creator-hero__row { max-width: 1200px; margin: 40px auto 0; padding: 0 24px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 16px; }
+.creator-hero__stats { display: flex; gap: 16px; }
+.creator-hero__stats .badge { display: inline-flex; align-items: center; gap: 6px; background: #fff; color: var(--ink); border-radius: 999px; padding: 10px 18px; font-size: 14px; }
+.creator-hero__stats .badge b { color: var(--blue); }
+
+.creator-courses { max-width: 1200px; margin: 0 auto; padding: 64px 24px 96px; }
+.creator-courses .course-grid { margin-top: 48px; }
+
+@media (max-width: 600px) {
+  .creator-hero__body { align-items: flex-start; }
+  .creator-hero__info h1 { flex-direction: column; align-items: flex-start; gap: 10px; }
+  .creator-hero__row { flex-direction: column; align-items: flex-start; }
+}
